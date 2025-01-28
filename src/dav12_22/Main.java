@@ -22,11 +22,14 @@ public class Main {
         objectOutputStream.close();
         fileOutputStream.close();
         //2
+        /*
         FileInputStream fileInputStream = new FileInputStream("out.txt");
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
         Student deserialization = (Student) objectInputStream.readObject();
         fileOutputStream.close();
         objectInputStream.close();
+
+         */
 
 
 

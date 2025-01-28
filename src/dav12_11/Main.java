@@ -51,14 +51,14 @@ class id extends Exception {
 
 
 class Pers {
-     String saxeli1;
-     String gvari1;
-     int weli1;
-     int tve1;
-     int dge1;
-     String user1;
-     String paroli1;
-     String id1;
+    private String saxeli1;
+     private String gvari1;
+     private int weli1;
+     private int tve1;
+     private int dge1;
+     private String user1;
+     private String paroli1;
+     private String id1;
 
     public Pers(String saxeli1, String gvari1, int weli1, int tve1, int dge1,
                 String user1, String paroli1, String id1) throws saxeli, gvari, weli,
@@ -76,10 +76,22 @@ class Pers {
     }
 
     public void setSaxeli1(String saxeli1) throws saxeli {
-        if (saxeli1.length() < 2) {
+        /*if (saxeli1.length() < 2) {
             throw new saxeli("2 aso minimum");
         }
         this.saxeli1 = saxeli1;
+
+         */
+        try {
+            if (saxeli1.length() < 2) {
+                throw new saxeli("2 aso minimum");
+
+            }
+            this.saxeli1 = saxeli1;
+        }
+        catch(saxeli a){
+            System.out.println("Shemokvanili saxeli 2 asoze naklebia");
+        }
     }
 
     public void setGvari1(String lastName) throws gvari {
@@ -137,7 +149,7 @@ class Pers {
 
 public class Main {
     public static void main(String[] args){
-    /*n1
+    /*n4
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -158,7 +170,7 @@ public class Main {
         }
 
      */
-/*1
+/*2
         int[] arr1 = {10, 20, 30, 40, 50};
         int[] arr2 = {2, 8, 5, 20, 45};
         for(int i = 0; i < arr1.length; i++) {

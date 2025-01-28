@@ -57,18 +57,20 @@ public class Main {
 
 
          */
-        /*n5
+
     Scanner scanner = new Scanner(System.in);
     String str = scanner.nextLine();
     int index = str.length()-1;
     if(str.charAt(index)=='a'||str.charAt(index)=='e'||str.charAt(index)=='i'||str.charAt(index)=='o'||str.charAt(index)=='u'){
         System.out.println("mtavrdeba xmovanze");
-    }else{
+    }else if((str.charAt(index)>='a'&&str.charAt(index)<='z')||(str.charAt(index)>='A'&&str.charAt(index)<='Z')){
         System.out.println("Mtavrdeba tanxmovanze");
+    }else{
+        System.out.println("Arc xmovania arc tanxmovani");
     }
 
-         */
-        /*
+
+/*
         Scanner scanner = new Scanner(System.in);
 
         String str = scanner.nextLine();
